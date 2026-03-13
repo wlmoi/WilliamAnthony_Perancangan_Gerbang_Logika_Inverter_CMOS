@@ -1,0 +1,53 @@
+*=====================================================
+* CMOS Inverter Testbench (GF180MCU) - EL4012 Tugas 4
+* Author: William Anthony (13223048)
+*=====================================================
+
+.option savecurrents
+.temp 27
+
+* ---- Parameter ----
+.param VDD=1.8
+.param LCH=0.28u
+.param WN=1.00u
+.param WP=2.00u
+
+* ---- Supply & Stimulus ----
+VDD vdd 0 {VDD}
+VIN in  0 PULSE(0 {VDD} 0 20p 20p 5n 10n)
+CL  out 0 10f
+
+* ---- Device Model Include ----
+* Sesuaikan salah satu include di bawah dengan instalasi GF180MCU Anda.
+* Contoh 1 (umum pada open_pdks):
+* .lib "${PDK_ROOT}/gf180mcuA/libs.tech/ngspice/sm141064.ngspice" tt
+*
+* Contoh 2 (jika ada file model custom kampus/lab):
+* .include "D:/path_ke_model_gf180/gf180_models.spice"
+
+* ---- Inverter DUT ----
+* Catatan: Nama model transistor bisa berbeda tergantung paket model.
+* Ubah pmos_03v3 / nmos_03v3 sesuai nama model yang valid pada file model Anda.
+M_P out in vdd vdd pmos_03v3 w={WP} l={LCH}
+M_N out in 0   0   nmos_03v3 w={WN} l={LCH}
+
+* ---- Analysis ----
+.tran 10p 40n
+
+.control
+save all
+run
+
+* Delay measurement pada threshold 50% VDD (VDD = 1.8V -> 0.9V)
+meas tran tPHL trig v(in)  val=0.9 rise=1 targ v(out) val=0.9 fall=1
+meas tran tPLH trig v(in)  val=0.9 fall=1 targ v(out) val=0.9 rise=1
+
+* Rise/Fall time output (10%-90% dan 90%-10%)
+meas tran tRise trig v(out) val=0.18 rise=1 targ v(out) val=1.62 rise=1
+meas tran tFall trig v(out) val=1.62 fall=1 targ v(out) val=0.18 fall=1
+
+plot v(in) v(out)
+wrdata spice/tran_vin_vout.csv time v(in) v(out)
+.endc
+
+.end

@@ -1,0 +1,10 @@
+* Placeholder netlist schematic inverter
+* Ganti dengan netlist hasil export dari Xschem
+
+.subckt inverter in out vdd gnd
+* Contoh instansiasi transistor (sesuaikan model GF180 Anda)
+M_P out in vdd vdd pmos_03v3 w=2u l=0.28u
+M_N out in gnd gnd nmos_03v3 w=1u l=0.28u
+.ends inverter
+
+.end

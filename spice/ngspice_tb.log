@@ -1,0 +1,16 @@
+warning, can't find model 'pmos_03v3' from line
+    m_p out in vdd vdd pmos_03v3 w={wp} l={lch}
+warning, can't find model 'nmos_03v3' from line
+    m_n out in 0 0 nmos_03v3 w={wn} l={lch}
+
+Note: No compatibility mode selected!
+
+
+Circuit: *=====================================================
+
+Error on line 31 or its substitute:
+  m_p out in vdd vdd pmos_03v3 w=    2.000000000000000e-06     l=    2.800000000000000e-07   
+could not find a valid modelname
+    Simulation interrupted due to error!
+
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run

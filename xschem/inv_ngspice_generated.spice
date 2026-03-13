@@ -1,0 +1,14 @@
+** sch_path: /mnt/d/LinkedinProjects/WilliamAnthony_Perancangan_Gerbang_Logika_Inverter_CMOS/xschem/inv_ngspice.sch
+**.subckt inv_ngspice A Y
+*.ipin A
+*.opin Y
+B1 net1 0 V = 'VCC/2*(1-tanh((V(A1)-VCC/2)*100))'
+R1 Y1 net1 'ROUT' m=1
+C1 A1 0 8f m=1
+C2 Y1 0 8f m=1
+V1 Y Y1 0
+.save i(v1)
+V2 A1 A 0
+.save i(v2)
+**.ends
+.end

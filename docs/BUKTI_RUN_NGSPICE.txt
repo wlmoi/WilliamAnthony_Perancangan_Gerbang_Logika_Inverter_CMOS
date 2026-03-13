@@ -1,0 +1,8 @@
+Bukti Run Ngspice
+Waktu: 2026-03-12 23:53:08
+File: spice/inverter_cmos_sanity.spice
+VOUT@IN_HIGH: 1.877037e-09 V
+VOUT@IN_LOW : 1.800000e+00 V
+tPHL: 1.818637e-11 s
+tPLH: 1.949316e-11 s
+Status: PASS (fungsi inverter CMOS benar)

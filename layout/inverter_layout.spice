@@ -1,0 +1,9 @@
+* Layout netlist for LVS check (sementara disamakan untuk verifikasi alur)
+* Setelah extraction real dari Magic/KLayout tersedia, timpa file ini dengan hasil extraction.
+
+.subckt inverter in out vdd gnd
+M_P out in vdd vdd pmos_03v3 w=2u l=0.28u
+M_N out in gnd gnd nmos_03v3 w=1u l=0.28u
+.ends inverter
+
+.end
