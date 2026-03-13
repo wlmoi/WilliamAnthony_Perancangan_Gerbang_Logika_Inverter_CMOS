@@ -5,4 +5,6 @@ VOUT@IN_HIGH: 1.877037e-09 V
 VOUT@IN_LOW : 1.800000e+00 V
 tPHL: 1.818637e-11 s
 tPLH: 1.949316e-11 s
+tRise: 3.541432e-11 s
+tFall: 3.283421e-11 s
 Status: PASS (fungsi inverter CMOS benar)

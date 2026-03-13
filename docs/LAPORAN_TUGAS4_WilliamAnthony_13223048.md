@@ -57,8 +57,8 @@ Contoh tabel hasil:
 | Wp/Lp | 2.00u / 0.28u |
 | t_pHL | 0.0182 ns |
 | t_pLH | 0.0195 ns |
-| t_rise | N/A (belum diukur) |
-| t_fall | N/A (belum diukur) |
+| t_rise | 0.0354 ns |
+| t_fall | 0.0328 ns |
 
 Catatan: nilai delay diambil dari `docs/BUKTI_RUN_NGSPICE.txt`.
 
@@ -73,7 +73,7 @@ Tambahkan screenshot layout final dan jelaskan penempatan:
 Screenshot layout: *(tempel gambar di sini)*
 
 ### 5.2 Dimensi Layout
-- Ukuran bounding box: *(belum diukur)*
+- Ukuran bounding box: 1422 x 7800 (Magic units, dihitung dari seluruh `rect` di [layout/Inverter.mag](layout/Inverter.mag); konversi ke um perlu verifikasi dengan ruler KLayout)
 - Pertimbangan area vs kemudahan routing: area dibuat ringkas, routing dibuat sederhana untuk memudahkan DRC/LVS
 
 ## 6. Tahap 4 — DRC
