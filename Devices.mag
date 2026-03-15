@@ -1,0 +1,33 @@
+magic
+tech gf180mcuA
+magscale 1 2
+timestamp 1763337600
+<< nwell >>
+rect -370 120 370 560
+<< active >>
+rect -320 180 320 420
+rect -320 -420 320 -180
+<< pplus >>
+rect -340 160 340 440
+<< nplus >>
+rect -340 -440 340 -160
+<< poly >>
+rect -30 -500 30 500
+<< contact >>
+rect -280 230 -200 310
+rect 200 230 280 310
+rect -280 -310 -200 -230
+rect 200 -310 280 -230
+<< metal1 >>
+rect -320 210 -160 330
+rect 160 210 320 330
+rect -320 -330 -160 -210
+rect 160 -330 320 -210
+rect -30 -520 30 520
+<< labels >>
+rlabel metal1 -240 270 -240 270 1 sd_top_l
+rlabel metal1 240 270 240 270 1 sd_top_r
+rlabel metal1 -240 -270 -240 -270 1 sd_bot_l
+rlabel metal1 240 -270 240 -270 1 sd_bot_r
+rlabel poly 0 0 0 0 1 gate
+<< end >>

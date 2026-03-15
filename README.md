@@ -34,7 +34,7 @@ Contoh variabel environment yang umum dipakai:
 4. Buat layout inverter di Magic/KLayout (`layout/`)
 5. Jalankan DRC dan simpan report
 6. Extract netlist layout
-7. Jalankan LVS dengan Netgen (`lvs/netgen_lvs.tcl`)
+7. Jalankan LVS dengan Netgen (`lvs/netgen_lvs_auto.tcl`)
 8. Lengkapi laporan (`docs/LAPORAN_TUGAS4_WilliamAnthony_13223048.md`)
 9. Kumpulkan zip satu folder proyek
 

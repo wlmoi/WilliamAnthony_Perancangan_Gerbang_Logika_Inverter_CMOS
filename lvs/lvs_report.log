@@ -1,0 +1,24 @@
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+pmos_03v3 (1)                              |pmos_03v3 (1)                              
+nmos_03v3 (1)                              |nmos_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Final result: Circuits match uniquely.
+.

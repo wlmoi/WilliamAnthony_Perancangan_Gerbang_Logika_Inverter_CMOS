@@ -1,0 +1,29 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: *=====================================================
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        1.8
+in                                           0
+out                                        1.8
+vin#branch                                   0
+vdd#branch                           -1.81e-12
+
+
+No. of Data Rows : 3041
+vout_when_in_high   =  1.877037e-09
+vout_when_in_low    =  1.800000e+00
+tphl                =  1.818637e-11 targ=  2.818637e-11 trig=  1.000000e-11
+tplh                =  1.949316e-11 targ=  5.049493e-09 trig=  5.030000e-09
+trise               =  3.541432e-11 targ=  5.071753e-09 trig=  5.036338e-09
+tfall               =  3.283421e-11 targ=  4.837456e-11 trig=  1.554034e-11
+Note: Simulation executed from .control section 

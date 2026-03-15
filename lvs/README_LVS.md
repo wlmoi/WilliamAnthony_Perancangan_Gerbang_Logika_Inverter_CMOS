@@ -15,7 +15,7 @@ NIM: 13223048
 Dari root proyek:
 
 ```bash
-netgen -batch source lvs/netgen_lvs.tcl
+netgen -batch source lvs/netgen_lvs_auto.tcl
 ```
 
 ## Output

@@ -1,0 +1,6 @@
+DRC Batch Report
+================
+Tool   : Magic
+Tech   : GF180MCU
+Topcell: Inverter
+Violations: 0
